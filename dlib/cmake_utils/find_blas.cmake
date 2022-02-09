@@ -198,7 +198,7 @@ if (UNIX OR MINGW)
       )
 
    if (NOT blas_found)
-      find_library(cblas_lib NAMES openblasp openblas PATHS ${extra_paths})
+      find_library(cblas_lib NAMES openblas PATHS ${extra_paths})
       if (cblas_lib)
          set(blas_libraries ${cblas_lib})
          set(blas_found 1)
