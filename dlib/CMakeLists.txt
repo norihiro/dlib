@@ -273,8 +273,6 @@ if (NOT TARGET dlib)
 
    set(source_files
       base64/base64_kernel_1.cpp
-      bigint/bigint_kernel_1.cpp
-      bigint/bigint_kernel_2.cpp
       bit_stream/bit_stream_kernel_1.cpp
       entropy_decoder/entropy_decoder_kernel_1.cpp
       entropy_decoder/entropy_decoder_kernel_2.cpp
@@ -299,42 +297,21 @@ if (NOT TARGET dlib)
    else()
 
       set(source_files ${source_files}
-         sockets/sockets_kernel_1.cpp
-         bsp/bsp.cpp
          dir_nav/dir_nav_kernel_1.cpp
          dir_nav/dir_nav_kernel_2.cpp
          dir_nav/dir_nav_extensions.cpp
-         gui_widgets/fonts.cpp
          linker/linker_kernel_1.cpp
-         logger/extra_logger_headers.cpp
-         logger/logger_kernel_1.cpp
-         logger/logger_config_file.cpp
          misc_api/misc_api_kernel_1.cpp
          misc_api/misc_api_kernel_2.cpp
-         sockets/sockets_extensions.cpp
-         sockets/sockets_kernel_2.cpp
-         sockstreambuf/sockstreambuf.cpp
-         sockstreambuf/sockstreambuf_unbuffered.cpp
-         server/server_kernel.cpp
-         server/server_iostream.cpp
-         server/server_http.cpp
-         threads/multithreaded_object_extension.cpp
-         threads/threaded_object_extension.cpp
          threads/threads_kernel_1.cpp
-         threads/threads_kernel_2.cpp
-         threads/threads_kernel_shared.cpp
          threads/thread_pool_extension.cpp
          threads/async.cpp
-         timer/timer.cpp
          stack_trace.cpp
          cuda/cpu_dlib.cpp
          cuda/tensor_tools.cpp
-         data_io/image_dataset_metadata.cpp
          data_io/mnist.cpp
          data_io/cifar.cpp
-         global_optimization/global_function_search.cpp
          filtering/kalman_filter.cpp
-         svm/auto.cpp
          )
 
       if(UNIX)
