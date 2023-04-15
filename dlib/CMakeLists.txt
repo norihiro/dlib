@@ -297,6 +297,8 @@ if (NOT TARGET dlib)
          linker/linker_kernel_1.cpp
          misc_api/misc_api_kernel_1.cpp
          misc_api/misc_api_kernel_2.cpp
+         threads/thread_pool_extension.cpp
+         threads/async.cpp
          stack_trace.cpp
          cuda/cpu_dlib.cpp
          cuda/tensor_tools.cpp
