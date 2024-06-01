@@ -5,7 +5,6 @@
 
 #include "load_image_abstract.h"
 #include "../string.h"
-#include "png_loader.h"
 #include "jpeg_loader.h"
 #include "webp_loader.h"
 #include "image_loader.h"
