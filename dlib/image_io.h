@@ -9,7 +9,9 @@
 #define DLIB_IMAGe_IO_
 
 #include "image_loader/image_loader.h"
+#ifdef DLIB_PNG_SUPPORT
 #include "image_loader/png_loader.h"
+#endif
 #include "image_loader/jpeg_loader.h"
 #include "image_loader/webp_loader.h"
 #include "image_loader/load_image.h"
