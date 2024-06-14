@@ -5,7 +5,9 @@
 
 #include "load_image_abstract.h"
 #include "../string.h"
+#ifdef DLIB_PNG_SUPPORT
 #include "png_loader.h"
+#endif
 #include "jpeg_loader.h"
 #include "webp_loader.h"
 #include "jxl_loader.h"
